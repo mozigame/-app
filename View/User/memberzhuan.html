@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title></title>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/jquery.js"></script>
+<script src="../../js/para.js"></script>
+<script src="../../js/function.js"></script>
+<link href="../../css/mui.min.css" rel="stylesheet" />
+<link href="../../css/iconfont.css" rel="stylesheet" />
+<link href="../../css/iconfont1.css" rel="stylesheet" />
+<link href="../../css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav" id="topBar">
+    <h1 class="mui-title" id="title">用户管理</h1>
+    <a class="mui-icon mui-icon-left-nav mui-pull-left iconfont icon-leftarrow" id="back"></a>
+</header>
+<div id="wrapper">
+	<div id="air">
+		 <div class="input_label">
+			 <div class="input_item mui-clearfix" style="border: 1px solid #E2E2E2; ">
+			 	  <span class="fl">用户名</span>
+			 	  <input class="fl" type="text" value="aa"  id="old-pwd" readonly="readonly" onfocus="blur()"/>
+			 </div>
+			 <div class="input_item mui-clearfix input_item2">
+			 	  <span class="fl">转账金额</span>
+			 	  <input class="fl" type="text" placeholder="请输入转账金额" id="the-pwd"/>
+			 </div>
+              <div class="mui-input-row mui-select input_item mui-clearfix input_item2">
+              		<span class="fl">转账类型</span>
+            			<select style="text-align: center; font-size: 14px;" id="zz_type">
+                        	<option value="11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;转账</option>
+                        	<option value="9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;活动</option>
+                    	</select>
+             </div>
+			 <div class="input_item mui-clearfix" style="border: 1px solid #E2E2E2; ">
+			 	  <span class="fl">资金密码</span>
+			 	  <input class="fl" type="password" placeholder="请输入资金密码" id="con-pwd"/>
+			 </div>
+			 <div class="input_item input_item1" >
+			 	  <a href="javascript:;" id="submit">提交</a>
+			 </div>
+		</div>
+	</div>
+</div>
+<script src="../../js/Controller/memberzhuan.js" type="text/javascript"></script>
+</body>
+</html>

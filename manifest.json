@@ -1,0 +1,975 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H528EA3D2",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "众富娱乐",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.3.2",/*应用版本名称*/
+		"code": "83"
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "images/aaa.png"
+	},
+	"launch_path": "app.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": "http://www.dcloud.io"
+	},
+	"permissions": {
+		"Accelerometer": {
+			"description": "访问加速度感应器"
+		},
+		"Audio": {
+			"description": "访问麦克风"
+		},
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+		"Camera": {
+			"description": "访问摄像头"
+		},
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+		"Contacts": {
+			"description": "访问系统联系人信息"
+		},
+		"Device": {
+			"description": "访问设备信息"
+		},
+		"Downloader": {
+			"description": "文件下载管理"
+		},
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		"File": {
+			"description": "访问本地文件系统"
+		},
+		"Gallery": {
+			"description": "访问系统相册"
+		},
+		
+		"Invocation": {
+			"description": "使用Native.js能力"
+		},
+		
+		"Orientation": {
+			"description": "访问方向感应器"
+		},
+		"Proximity": {
+			"description": "访问距离感应器"
+		},
+		"Storage": {
+			"description": "管理应用本地数据"
+		},
+
+		"Uploader": {
+			"description": "管理文件上传任务"
+		},
+		"Runtime": {
+			"description": "访问运行期环境"
+		},
+		"XMLHttpRequest": {
+			"description": "跨域网络访问"
+		},
+		"Zip": {
+			"description": "文件压缩与解压缩"
+		},
+		
+		
+		"Speech": {
+			"description": "管理语音识别插件"
+		},
+		"Webview": {
+			"description": "窗口管理"
+		},
+		"NativeUI": {
+			"description": "原生UI控件"
+		},
+		"Navigator": {
+			"description": "浏览器信息"
+		},
+		"NativeObj": {
+			"description": "原生对象"
+		},"Barcode":{}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true,"delay":"500"
+		},
+		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "iphone",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": ["<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>"]
+			},
+			"orientation": ["portrait-primary","portrait-secondary","landscape-primary","landscape-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "images/LOGO.png", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "unpackage/res/icons/57x57.png",/*iPhone普通屏幕程序图标，分辨率：57x57*/
+						"retina": "unpackage/res/icons/114x114.png",/*iPhone高分屏程序图标，分辨率：114x114*/
+						"retina7": "unpackage/res/icons/120x120.png",/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						"spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png",
+						"retina8": "unpackage/res/icons/180x180.png",
+						"settings-retina8": "unpackage/res/icons/87x87.png"
+					},
+					"ipad": {
+						"normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "unpackage/res/icons/76x76.png", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "unpackage/res/icons/152x152.png", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png"
+					}
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png",
+					"xxxhdpi": "unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "C:/Users/USER/Desktop/项目包/众富app设计/文件包/启动页+图标2/启动页+图标2/1536.png",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": ""
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"pages": {
+			"View/List/list.html": {
+				"resources": [
+					"js/Controller/list.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/Index/index.html": {
+				"resources": [
+					"View/Home/home.html",
+					"js/para.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"images/public/service.png",
+					"js/Controller/index.js",
+					"js/function.js",
+					"fonts/iconfont.ttf",
+					"View/Game/gameList.html",
+					"images/banner/4.png",
+					"images/banner/banner2.png",
+					"images/banner/2.png",
+					"images/banner/banner1.jpg",
+					"images/banner/3.png",
+					"images/banner/banner3.png",
+					"css/swiper.min.css",
+					"js/swiper.min.js",
+					"images/banner/1.png",
+					"images/public/bg.png",
+					"js/jquery.js"
+				],
+				"refer": [
+					"View/List/list.html",
+					"View/User/user.html",
+					"View/Record/record.html",
+					"View/Service/service.html"
+				],
+				"priority": 0
+			},
+			"View/Home/home.html": {
+				"resources": [
+					"images/type/mskssc.png",
+					"js/para.js",
+					"js/swiper.min.js",
+					"js/jquery.marquee.min.js",
+					"images/type/gd11x5.png",
+					"images/banner/banner1.jpg",
+					"js/mui.min.js",
+					"images/type/jlpssc.png",
+					"images/type/tw5fc.png",
+					"images/type/mlxy3fc.png",
+					"css/iconfont.css",
+					"images/type/sh11x5.png",
+					"images/banner/3.jpg",
+					"js/Controller/home.js",
+					"js/jquery.js",
+					"images/type/tjssc.png",
+					"images/banner/4.jpg",
+					"images/type/dbssc.png",
+					"css/style.css",
+					"images/type/hgssc.png",
+					"images/banner/1.jpg",
+					"images/type/sd11x5.png",
+					"images/type/bjssc.png",
+					"images/type/jlpsm.png",
+					"images/banner/2.jpg",
+					"images/type/bjpk10.png",
+					"css/swiper.min.css",
+					"css/mui.min.css",
+					"images/type/cqssc.png",
+					"images/type/jx11x5.png",
+					"js/function.js",
+					"images/type/fc3d.png",
+					"images/public/bg.png",
+					"images/type/jlpffc.png",
+					"images/banner/banner3.png",
+					"images/banner/index_banner_1.jpg",
+					"images/banner/4.png",
+					"images/banner/banner2.png",
+					"images/banner/2.png",
+					"images/banner/3.png",
+					"images/banner/1.png",
+					"fonts/iconfont.ttf",
+					"images/type/pl3.png",
+					"images/type/djssc.png",
+					"images/type/xjpssc.png",
+					"images/type/xjssc.png",
+					"images/type/hljssc.png",
+					"images/type/wh1fc.png",
+					"images/type/wh2fc.png",
+					"images/type/xyjlpssc.png",
+					"images/type/xyxjpssc.png",
+					"images/type/xywh2fc.png",
+					"images/type/wh5fc.png",
+					"images/type/xycqssc.png",
+					"images/type/txffc.png",
+					"images/type/xyhgssc.png",
+					"images/type/xymskssc.png"
+				],
+				"refer": [
+					"View/Bet/bet.html",
+					"View/Home/add-lot.html",
+					"View/Home/contne.html"
+				],
+				"priority": 0
+			},
+			"View/Login/login.html": {
+				"resources": [
+					"js/Controller/login.js",
+					"images/public/logo1.gif",
+					"js/para.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"images/public/bg.png",
+					"js/jquery.js",
+					"images/public/logo.png",
+					"js/mui.min.js",
+					"js/function.js"
+				],
+				"refer": [
+					"View/Index/index.html"
+				],
+				"priority": 0
+			},
+			"View/User/user.html": {
+				"resources": [
+					"css/iconfont1.css",
+					"fonts/iconfont1.ttf",
+					"images/public/userBg.png",
+					"js/Controller/user.js",
+					"fonts/mui.ttf",
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"images/public/bg.png",
+					"js/function.js"
+				],
+				"refer": [
+					"View/User/teambet.html",
+					"View/User/teamview.html",
+					"View/User/topup.html",
+					"View/User/drawith.html",
+					"View/User/myCount.html",
+					"View/User/trans.html",
+					"View/User/setMpwd.html",
+					"View/User/bankcards.html",
+					"View/User/loginpwd.html",
+					"View/User/moneypwd.html",
+					"View/User/agent.html",
+					"View/User/member.html",
+					"View/Login/login.html",
+					"View/User/teamReport.html",
+					"View/User/perReport.html",
+					"View/User/report.html"
+				],
+				"priority": 0
+			},
+			"View/Record/record.html": {
+				"resources": [
+					"js/Controller/reocrod.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/jquery.js",
+					"fonts/iconfont.ttf",
+					"js/para.js",
+					"js/mui.min.js",
+					"js/function.js"
+				],
+				"refer": [
+					"View/Record/details.html"
+				],
+				"priority": 0
+			},
+			"app.html": {
+				"resources": [
+					"js/Controller/app.js",
+					"js/mui.min.js",
+					"js/function.js"
+				],
+				"refer": [
+					"View/Login/login.html"
+				],
+				"priority": 0
+			},
+			"View/User/teambet.html": {
+				"resources": [
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/Controller/teambet.js",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [
+					"View/User/teambetDetail.html"
+				],
+				"priority": 0
+			},
+			"View/User/teamview.html": {
+				"resources": [
+					"images/team/qp.png",
+					"js/para.js",
+					"images/team/td.png",
+					"css/style.css",
+					"images/team/yx.png",
+					"images/team/jq.png",
+					"images/team/zc.png",
+					"js/Controller/teamview.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"images/team/fx.png",
+					"css/mui.min.css",
+					"fonts/iconfont.ttf",
+					"images/team/rs.png",
+					"js/jquery.js",
+					"js/function.js",
+					"images/team/t10.png",
+					"images/team/t6.png",
+					"images/team/t8.png",
+					"images/team/t11.png",
+					"images/team/t9.png",
+					"images/team/t1.png",
+					"images/team/t7.png",
+					"images/team/t3.png",
+					"images/team/t5.png",
+					"images/team/t4.png",
+					"images/team/t2.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/topup.html": {
+				"resources": [
+					"js/clipboard.min.js",
+					"js/Controller/topup.js",
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [
+					"View/User/online1.html"
+				],
+				"priority": 0
+			},
+			"View/User/drawith.html": {
+				"resources": [
+					"js/Controller/drawith.js",
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/myCount.html": {
+				"resources": [
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/jquery.js",
+					"js/Controller/myAccount.js",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/trans.html": {
+				"resources": [
+					"js/Controller/trans.js",
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"images/table/jt.png",
+					"js/jquery.js",
+					"js/function.js",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/setMpwd.html": {
+				"resources": [
+					"js/Controller/setMpwd.js",
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/bankcards.html": {
+				"resources": [
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/jquery.js",
+					"js/Controller/banks.js",
+					"js/function.js"
+				],
+				"refer": [
+					"View/User/setCards.html"
+				],
+				"priority": 0
+			},
+			"View/User/loginpwd.html": {
+				"resources": [
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/Controller/loginPwd.js",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/setCards.html": {
+				"resources": [
+					"js/Controller/cards.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/moneypwd.html": {
+				"resources": [
+					"js/Controller/moneyPwd.js",
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/agent.html": {
+				"resources": [
+					"js/Controller/agent.js",
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/jquery.js",
+					"js/function.js",
+					"js/clipboard.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/member.html": {
+				"resources": [
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/Controller/member.js",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [
+					"View/User/memberzhuan.html",
+					"View/User/memberfd.html",
+					"View/User/memberdetails.html"
+				],
+				"priority": 0
+			},
+			"View/User/teambetDetail.html": {
+				"resources": [
+					"js/Controller/teambetDetail.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/para.js",
+					"js/mui.min.js",
+					"fonts/iconfont.ttf",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/Game/gameList.html": {
+				"resources": [
+					"js/Controller/gameList.js",
+					"js/para.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/jquery.js",
+					"js/function.js",
+					"images/public/bgn.jpg",
+					"images/public/service.png"
+				],
+				"refer": [
+					"View/Game/game.html",
+					"View/Game/Baccarat.html",
+					"View/Game/xybet.html"
+				],
+				"priority": 0
+			},
+			"View/Bet/bet.html": {
+				"resources": [
+					"js/para.js",
+					"js/mui.min.js",
+					"js/calc.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"js/jsonData.js",
+					"js/Controller/bet.js",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [
+					"View/Bet/history.html",
+					"View/Bet/order.html",
+					"View/Bet/play.html"
+				],
+				"priority": 0
+			},
+			"View/Home/add-lot.html": {
+				"resources": [
+					"images/type/mskssc.png",
+					"images/type/fc3d.png",
+					"images/type/hljssc.png",
+					"js/para.js",
+					"js/swiper.min.js",
+					"images/type/wh1fc.png",
+					"images/type/gd11x5.png",
+					"images/type/wh5fc.png",
+					"images/type/djssc.png",
+					"js/mui.min.js",
+					"images/type/wh2fc.png",
+					"images/type/jlpssc.png",
+					"css/iconfont.css",
+					"images/type/mlxy3fc.png",
+					"images/type/tw5fc.png",
+					"images/type/sh11x5.png",
+					"images/type/jlpffc.png",
+					"fonts/iconfont.ttf",
+					"images/type/txffc.png",
+					"js/jquery.js",
+					"images/type/tjssc.png",
+					"images/type/dbssc.png",
+					"js/jsonData.js",
+					"css/style.css",
+					"images/type/hgssc.png",
+					"images/type/sd11x5.png",
+					"images/type/bjssc.png",
+					"images/type/jlpsm.png",
+					"images/type/xjpssc.png",
+					"images/type/xjssc.png",
+					"images/type/bjpk10.png",
+					"js/Controller/addLot.js",
+					"css/swiper.min.css",
+					"css/mui.min.css",
+					"images/type/cqssc.png",
+					"images/type/jx11x5.png",
+					"images/type/pl3.png",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/Record/details.html": {
+				"resources": [
+					"js/Controller/reocrodDetails.js",
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/Bet/history.html": {
+				"resources": [
+					"js/Controller/histroy.js",
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/Bet/order.html": {
+				"resources": [
+					"js/Controller/order.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/para.js",
+					"js/mui.min.js",
+					"fonts/iconfont.ttf",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/memberzhuan.html": {
+				"resources": [
+					"js/Controller/memberzhuan.js",
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/jquery.js",
+					"js/function.js",
+					"fonts/mui.ttf",
+					"css/iconfont1.css",
+					"fonts/iconfont1.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/memberfd.html": {
+				"resources": [
+					"js/Controller/memberfd.js",
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/Bet/play.html": {
+				"resources": [
+					"js/Controller/play.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/Home/contne.html": {
+				"resources": [
+					"js/Controller/content.js",
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/swiper.min.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/swiper.min.js",
+					"fonts/iconfont.ttf",
+					"images/public/bg.png",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/teamReport.html": {
+				"resources": [
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/Controller/teamReport.js",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [
+					"View/User/transfer.html",
+					"View/User/teamDetail.html"
+				],
+				"priority": 0
+			},
+			"View/User/memberdetails.html": {
+				"resources": [
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/Controller/memberdetails.js",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [
+					"View/User/memberfd.html",
+					"View/User/memberzhuan.html"
+				],
+				"priority": 0
+			},
+			"View/User/online1.html": {
+				"resources": [
+					"css/mui.min.css",
+					"js/clipboard.min.js",
+					"js/para.js",
+					"js/mui.min.js",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/perReport.html": {
+				"resources": [
+					"js/Controller/perReport.js",
+					"js/jquery.js",
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/report.html": {
+				"resources": [
+					"js/Controller/report.js",
+					"js/mui.min.js",
+					"js/para.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/transfer.html": {
+				"resources": [
+					"js/Controller/transfer.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"View/User/teamDetail.html": {
+				"resources": [
+					"js/Controller/teamDetail.js",
+					"js/para.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"fonts/iconfont.ttf",
+					"js/jquery.js",
+					"js/function.js"
+				],
+				"refer": [
+					"View/User/teamDetail1.html"
+				],
+				"priority": 0
+			},
+			"View/Game/game.html": {
+				"resources": [
+					"img/banker/cm_10k.png",
+					"img/newimges/zlu.png",
+					"img/banker/cm_1k.png",
+					"img/banker/huan.png",
+					"img/banker/check_bet_btn.png",
+					"img/banker/banker_lhh.png",
+					"img/banker/cm_10.png",
+					"js/Controller/shangGame.js",
+					"img/banker/cm_50.png",
+					"img/newimges/zlan.png",
+					"img/newimges/zhu.png",
+					"img/banker/look_bet_btn.png",
+					"img/banker/submit_banker.png",
+					"img/banker/confirm_btn.png",
+					"img/banker/table2.jpg",
+					"img/banker/x.png",
+					"css/app.css",
+					"img/newimges/zhong.png",
+					"img/newimges/zhe.png",
+					"img/banker/cancel_btn.png",
+					"img/banker/cm_100.png",
+					"img/newimges/zlong.png",
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"View/Game/gameList.html"
+				],
+				"priority": 0
+			},
+			"View/User/teamDetail1.html": {
+				"resources": [
+					"js/para.js",
+					"js/mui.min.js",
+					"js/Controller/teamDetail.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/jquery.js",
+					"js/function.js",
+					"fonts/iconfont.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"js/Controller/listDetails.js",
+				"images/table/gift.png",
+				"images/table/newmember.png",
+				"js/mui.js",
+				"images/table/totalmoney.png",
+				"View/List/listDetails.html",
+				"View/Bet/chase.html",
+				"images/table/activemember.png",
+				"View/Login/bottom.html",
+				"js/Controller/chase.js",
+				"css/mui.css",
+				"images/banner/zz.jpg",
+				"images/table/teammember.png",
+				"images/table/rebate.png",
+				"images/table/under.png",
+				"images/public/logo.gif"
+			]
+		}
+	}
+}

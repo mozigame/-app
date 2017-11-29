@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/para.js"></script>
+		<script src="../../js/function.js"></script>
+		<script src="../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../css/iconfont.css" rel="stylesheet" />
+		<link href="../../css/style.css" rel="stylesheet" />
+	</head>
+	<style type="text/css">
+		.downs li {
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+		
+		.downs .fj {
+			width: 90%;
+			/*background: #6c8afe !important;*/
+			margin: 10px auto !important;
+			/*height: 40px;*/
+			border-radius: 5px;
+			padding: 10px 20px !important;
+			color: white;
+			background: url(../../images/public/bgn.jpg) 0 0 no-repeat !important;
+			background-size: cover;
+		}
+		
+		#recent-list li {
+			/*background: #6c8afe !important;*/
+			font-size: 14px;
+			border: 0;
+		}
+		
+		#recent-list .lorry {
+			font-size: 20px;
+			line-height: 40px;
+		}
+		
+		#recent-list .add {
+			width: 80px;
+			text-align: center;
+			font-size: 14px;
+			background: white !important;
+			color: black;
+			line-height: 30px;
+			border-radius: 15px;
+			margin-top: 7px !important;
+		}
+		#recent-list .add2 {
+			width: 80px;
+			text-align: center;
+			font-size: 14px;
+			background: white !important;
+			color: black;
+			line-height: 30px;
+			border-radius: 15px;
+			margin-top: 7px !important;
+		}
+		
+		#recent-list li span {
+			padding: 0;
+			margin: 0;
+			vertical-align: middle !important;
+		}
+		
+		#recent-list .ul li:nth-child(1) {
+			width: 50%;
+			line-height: 30px;
+		}
+		
+		#recent-list .ul li:nth-child(2) {
+			width: 50%;
+			line-height: 30px;
+		}
+		
+		#recent-list .ul li:nth-child(3) {
+			line-height: 30px;
+		}
+		
+		#recent-list .fj li {
+			background: inherit !important;
+		}
+		
+		#recent-list .fj .add {
+			background: white !important;
+		}
+		#recent-list .fj .add2 {
+			background: white !important;
+		}
+	</style>
+
+	<body>
+		<div class="fixed" style="top: 0;width: 100%;overflow: auto;">
+			<div id="record-menu-top1" class="mui-segmented-control " style="">
+				<a class="mui-control-item mui-active" id="zuoz">我要坐庄</a>
+				<a class="mui-control-item" id="bj">彩票百家乐</a>
+				<a class="mui-control-item" id="wf">幸运玩法</a>
+				<a class="mui-control-item" id="qp">棋牌娱乐</a>
+				<a class="mui-control-item" id="zr">真人娱乐</a>
+			</div>
+		</div>
+		<div id="aaa">
+			
+		
+		<div class="rech mui-clearfix fixed fixe" id="cjfj">
+			<div class="mui-input-row mui-search fl">
+				<input type="search" placeholder="搜索房间号" class="se">
+			</div>
+			<div class="creatR fl">
+				+创建房间
+			</div>
+		</div>
+		<!--下拉刷新容器-->
+		<div id="record-list" class="downs">
+			<div id="refreshContainer" class="mui-content mui-scroll-wrapper" style="padding-top: 100px;">
+				<div class="mui-scroll">
+					<!--数据列表-->
+					<ul class="mui-table-view mui-table-view-chevron" id="recent-list">
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hengfang" style="display: none;">
+			<h1 class="ti">创建房间<span class="fr">x</span></h1>
+			<div class="item mui-clearfix">
+				<span class="fl" style="width: 20%;">上庄余额</span>
+				<p class="fl" id="sz_leftmoney" style="width: 60%;">aa</p>
+				<a class="fr" href="javascript:;" id="sz_transfer">转账</a>
+			</div>
+			<div class="item mui-clearfix">
+				<span class="fl" style="width: 20%;">选择彩种</span>
+				<select class="fl" id="game_list" style="width: 80%;"></select>
+			</div>
+			<div class="item mui-clearfix">
+				<span class="fl" style="width: 20%;">上庄金额</span>
+				<input class="fl" type="text" id="price" placeholder="请输入上庄金额" style="width: 80%;">
+			</div>
+			<div class="item mui-clearfix">
+				<span class="fl" style="width: 20%;">房间密码</span>
+				<input class="fl" type="text" id="password" placeholder="为空则不设密码" style="width: 80%;">
+			</div>
+			<a href="javascript:;" class="tijiao">提交</a>
+		</div>
+		<div class="mask" style="display: none;"></div>
+		<div class="hengfang1" style="display: none;">
+			<h1 class="ti">转账<span class="fr">x</span></h1>
+			<input type="text" id="price2" placeholder="转账到上庄" style="width: 80%;">
+			<div>
+				<a href="javascript:;" class="tijiao1">提交</a>
+			</div>
+		</div>
+</div>
+		<!--<div class="aaa" style="position: fixed; color: white;z-index: 1000000000000;">aaaa</div>-->
+		<script src="../../js/Controller/gameList.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

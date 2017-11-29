@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1.5" />
+		<title></title>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/para.js"></script>
+		<script src="../../js/function.js"></script>
+		<script src="../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../css/iconfont.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css" />
+		<link href="../../css/app1.css" rel="stylesheet" />
+		
+	</head>
+
+	<body>
+		<!--<input type="button" name="aa" id="aa" value="aaa" />-->
+		<div class="container">
+			<div class="sz_table">
+				<input type="hidden" id="lot_id" value="szcqssc">
+				
+				<div class="sz_bet">
+					<div class="sz_player">
+						<p><span>玩法</span> <span>金额</span></p>
+						<div class="scro">
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tbody id="sz_noreport_list">
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="sz_line_up">
+					<div class="sz_line_up_list">
+						<p><span>昵称</span> <span>金额</span></p>
+						<div class="scro">
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tbody id="sz_line_up_tbody">
+									
+								</tbody>
+							</table>
+						</div>
+						<div id="chezhuang"></div>
+					</div>
+				</div>
+				<div class="sz_ob_info">
+					<div class="sz_logo"><strong></strong></div>
+					<div class="sz_issue">
+						<b id="pre_issue">20171026051期</b>已开奖</div>
+					<div class="sz_openball"><i>1</i><i>5</i><i>3</i><i>2</i><i>6</i></div>
+				</div>
+				<div class="sz_cur_info">
+					<p>正在销售</p>
+					<div class="sz_issue">
+						<b id="cur_issue">20171026052</b>期</div>
+					<ul>
+						<li><span class="hours">00</span></li>
+						<li class="seperator">:</li>
+						<li><span class="minutes">00</span></li>
+						<li class="seperator">:</li>
+						<li><span class="seconds">00</span></li>
+					</ul>
+				</div>
+				<div class="sz_center clearfloat">
+                        </span>
+					<!--<div class="sz_center_ing">
+						<span><b id="user_member">7</b>正在坐庄</span> <strong>可投注金额</strong> <i id="is_leftmoney">223872.700</i>
+					</div>-->
+					
+                        </span>
+				</div>
+				<div class="sz_table_line">
+					<div class="sz_bigshow">
+						<div class="tit_1"><strong></strong></stromg></div>
+						<div class="tit_2"><strong></strong></stromg></div>
+						<div class="tit_3"><strong></strong></stromg></div>
+						<div class="tit_4"><strong></strong></stromg></div>
+					</div>
+					<div class="lhh" id="sz_bet_main" style="display:block;">
+						<div class="sz_bar">
+							<div class="zhuangdui bar">
+								<div class="tips"></div>
+								<div class="bars" play="bjlzd" rel="庄对" peilv="8.622">
+									<p id="zdfdz">1234</p>
+								</div>
+							</div>
+							<div class="long bar">
+								<div class="tips"></div>
+								<div class="bars" play="bjlz" rel="庄" peilv="1.940">
+									<p id="zfdz">1234</p>
+								</div>
+							</div>
+							<div class="hu bar">
+								<div class="tips"></div>
+								<div class="bars" play="bjlh" rel="和" peilv="8.622">
+									<p id="hfdz">1234</p>
+								</div>
+							</div>
+							<div class="he bar">
+								<div class="tips"></div>
+								<div class="bars" play="bjlx" rel="闲" peilv="1.940">
+									<p id="xfdz">1234</p>
+								</div>
+							</div>
+							<div class="xiandui bar">
+								<div class="tips"></div>
+								<div class="bars" play="bjlxd" rel="闲对" peilv="8.622">
+									<p id="xdfdz">1234</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="sz_btn_bar">
+						<a href="javascript:void(0);" class="sz_huan " >换桌</a>
+						<a href="javascript:void(0)" class="btn kaijiang_btn" style="margin-right:.09rem">开奖结果</a>
+						<a href="#!roomRecord" class="btn check_btn" id="openrecord">查看投注</a>
+						<a href="javascript:;" class="btn cancel_btn">取消</a>
+						<a href="javascript:;" class="btn confirm_btn" id="confirm_btn" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 400, height: 225}">
+							确认投注</a>
+					</div>
+				</div>
+				<div class="sz_chip">
+					<div class="sz_chip_main">
+						<div class="chip chip_10 active" rel="10">
+							<div>
+								<i>当前筹码</i><b class="triangle-down"></b></div>
+						</div>
+						<div class="chip chip_50" rel="50">
+							<div>
+								<i>当前筹码</i><b class="triangle-down"></b></div>
+						</div>
+						<div class="chip chip_100" rel="100">
+							<div>
+								<i>当前筹码</i><b class="triangle-down"></b></div>
+						</div>
+						<div class="chip chip_1000" rel="1000">
+							<div>
+								<i>当前筹码</i><b class="triangle-down"></b></div>
+						</div>
+						<div class="chip chip_10000" rel="10000">
+							<div>
+								<i>当前筹码</i><b class="triangle-down"></b></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mod-table-bottom clearfix">
+				<div class="szmenu">
+					<ul>
+						<li>
+							<a href="javascript:void(0);" class="active">开奖结果</a>
+						</li>
+						<i class="x"></i>
+					</ul>
+				</div>
+				<div class="tableA clearfix" id="openleft">
+					<ul>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+					</ul>
+					<ul>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-c"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-c"></i></li>
+					</ul>
+					<ul>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-c"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-c"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+					</ul>
+					<ul>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+					</ul>
+					<ul>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+					</ul>
+					<ul>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+					</ul>
+					<ul>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-c"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+					</ul>
+					<ul>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-c"></i></li>
+						<li><i class="mod-sprite i-iconb-c"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-c"></i></li>
+					</ul>
+					<ul>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li><i class="mod-sprite i-iconb-zl"></i></li>
+						<li><i class="mod-sprite i-iconb-zh"></i></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<ul class="tableB">
+					<li class="clearfix"><strong class="c-red" id="sztext1">庄</strong><span id="znumtext">26</span></li>
+					<li class="clearfix"><strong class="c-blue" id="sztext2">闲</strong><span id="xnumtext">26</span></li>
+					<li class="clearfix"><strong class="c-green" id="sztext3">和</strong><span id="hnumtext">26</span></li>
+					<li class="clearfix noLine"><strong class="c-dark" id="sztext4">总数</strong><span id="snumtext">26</span></li>
+				</ul>
+				<div class="tableC clearfix" id="openright">
+					<div class="scrll">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="sz_look">
+			<p class="cktz">查看投资 <i class="x"></i></p>
+			<ul class="clearfloat">
+				<li>订单号</li>
+				<li>用户名</li>
+				<li>投注时间</li>
+				<li>彩种</li>
+				<li>玩法</li>
+				<li>期号</li>
+				<li>投注内容</li>
+				<li>倍数</li>
+				<li>模式</li>
+				<li>总金额</li>
+				<li>奖金</li>
+				<li>开奖号码</li>
+				<li>状态</li>
+			</ul>
+			<div class="sz_scroll">
+
+			</div>
+		</div>
+
+		<div class="sz_particulars clearfloat">
+			<p>投注详请 <i class="x"></i></p>
+
+		</div>
+		<div class="hengfang" style="display: none;">
+			<h1 class="ti">申请上庄<span class="fr">x</span></h1>
+			<div class="item mui-clearfix">
+				<span class="fl" style="width: 20%;">上庄余额</span>
+				<p class="fl" id="sz_leftmoney" style="width: 60%;">aa</p>
+				<a class="fr" href="javascript:;" id="sz_transfer">转账</a>
+			</div>
+			<div class="item mui-clearfix">
+				<span class="fl" style="width: 20%;">上庄金额</span>
+				<input class="fl" type="text" id="price" placeholder="请输入上庄金额" style="width: 80%;">
+			</div>
+
+			<a href="javascript:;" class="tijiao">提交</a>
+		</div>
+		<div class="mask" style="display: none;"></div>
+		<div class="hengfang1" style="display: none;">
+			<h1 class="ti">转账<span class="fr">x</span></h1>
+			<input type="text" id="price2" placeholder="转账到上庄" style="width: 80%;">
+			<div>
+				<a href="javascript:;" class="tijiao1">提交</a>
+			</div>
+		</div>
+		<!--<script> 
+var mySwiper = new Swiper('.swiper-container',{
+slidesPerView :1,
+
+})
+</script>-->
+		<script src="../../js/Controller/bjl.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

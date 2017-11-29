@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title></title>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/jquery.js"></script>
+<script src="../../js/para.js"></script>
+<script src="../../js/function.js"></script>
+<link href="../../css/mui.min.css" rel="stylesheet" />
+<link href="../../css/iconfont.css" rel="stylesheet" />
+<link href="../../css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav" id="topBar">
+    <h1 class="mui-title" id="title">个人资料</h1>
+    <a class="mui-icon mui-icon-left-nav mui-pull-left iconfont icon-leftarrow" id="back"></a>
+</header>
+<div id="wrapper">
+	<div id="air">
+	    <div class="input_label">
+	 	     <div class="input_item mui-clearfix" style="border: 1px solid #E2E2E2; ">
+			 	  <span class="fl">密保问题</span>
+			 	   <select class="fl" id="ques">
+			 	   	<option rel="0" >请选择一个安全问题</option>
+			 	   	<option rel="1">您的生日是？</option>
+			 	   	<option rel="2">您最想去的地方是？</option>
+			 	   	<option rel="3">您的工号是？</option>
+			 	   	<option rel="4">对您影响最大的人的名字是？</option>
+			 	   	<option rel="5">您最熟悉的童年好友名字是？</option>
+			 	  </select>
+			 </div>
+			 <input type="hidden" name="op" id="op" value="" />
+			 <div class="input_item mui-clearfix input_item2">
+			 	  <span class="fl ">密保答案</span>
+			 	  <input class="fl" type="text" placeholder="请输入密保答案" id="dA"/>
+			 </div>
+			 <div class="input_item mui-clearfix" style="border: 1px solid #E2E2E2; ">
+			 	  <span class="fl">资金密码</span>
+			 	  <input class="fl" type="password" placeholder="请输入资金密码" id="pwd">
+			 </div>
+			 <div class="input_item input_item1"  >
+			 	  <a href="javascript:;" id="submit">确定</a>
+			 </div>
+		</div>
+	</div>
+</div>
+<script src="../../js/Controller/myAccount.js" type="text/javascript"></script>
+</body>
+</html>

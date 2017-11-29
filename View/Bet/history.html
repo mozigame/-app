@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title></title>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/jquery.js"></script>
+<script src="../../js/para.js"></script>
+<script src="../../js/function.js"></script>
+<link href="../../css/mui.min.css" rel="stylesheet" />
+<link href="../../css/iconfont.css" rel="stylesheet" />
+<link href="../../css/style.css" rel="stylesheet" />
+<style>
+.mui-pull-top-pocket {
+   top: 60px !important;
+}	
+</style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav" id="topBar">
+    <h1 class="mui-title" id="title">历史开奖记录</h1>
+    <a class="mui-icon mui-icon-left-nav mui-pull-left iconfont icon-leftarrow" id="back"></a>
+</header>
+<div id="wrapper">
+	<div id="air">
+		<!--下拉刷新容器-->
+		<div id="refreshContainer" class="mui-content mui-scroll-wrapper" style="padding-top: 60px;">
+		  <div class="mui-scroll">
+		    <!--数据列表-->
+		    <ul class="mui-table-view mui-table-view-chevron" id="recent-list">
+		      
+		    </ul>
+		  </div>
+		</div>
+	</div>
+</div>
+<script src="../../js/Controller/histroy.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title></title>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/jquery.js"></script>
+<script src="../../js/para.js"></script>
+<script src="../../js/function.js"></script>
+<link href="../../css/mui.min.css" rel="stylesheet" />
+<link href="../../css/iconfont.css" rel="stylesheet" />
+<link href="../../css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="record-menu-top" class="mui-segmented-control fixed" style="top: 0;">
+	<a class="mui-control-item mui-active" id="cp">彩票报表</a>
+	<a class="mui-control-item" id="zz">坐庄报表</a>
+	<a class="mui-control-item" id="zr">真人报表</a>
+	<a class="mui-control-item" id="qp">棋牌报表</a>
+</div>
+<div id="record-menu" class="mui-segmented-control fixed" style="top: 40px;" data-id='1'>
+	<a class="mui-control-item mui-active" id="tz">投注</a>
+	<a class="mui-control-item" id="zh">追号</a>
+	<a class="mui-control-item" id="cz">充值</a>
+	<a class="mui-control-item" id="tx">提现</a>
+</div>
+<div id="date-menu" class="mui-segmented-control fixed" style="top: 80px;" >
+	<a class="mui-control-item mui-active" id="t">本日</a>
+	<a class="mui-control-item" id="w">本周</a>
+	<a class="mui-control-item" id="m">本月</a>
+</div>
+<!--下拉刷新容器-->
+<div id="record-list">
+  <div id="refreshContainer" class="mui-content mui-scroll-wrapper" style="padding-top: 100px;">
+	  <div class="mui-scroll">
+		<!--数据列表-->
+		<ul class="mui-table-view mui-table-view-chevron" id="recent-list">
+			<p style="font-size: 12px;" id="pullmore">下拉获取更多</p>
+		</ul>
+	  </div>
+  </div>
+</div>
+<script src="../../js/Controller/reocrod.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title></title>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/jquery.js"></script>
+<script src="../../js/para.js"></script>
+<script src="../../js/function.js"></script>
+<script src="../../js/calc.js"></script>
+<script src="../../js/jsonData.js"></script>
+<link href="../../css/mui.min.css" rel="stylesheet" />
+<link href="../../css/iconfont.css" rel="stylesheet" />
+<link href="../../css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav" id="topBar">
+    <h1 class="mui-title" id="title"></h1>
+    <a class="mui-icon mui-icon-left-nav mui-pull-left iconfont icon-leftarrow" id="back"></a>
+    <a class="mui-icon-right-nav mui-pull-right" id="history">历史</a>
+</header>
+<div class="betMain" id="betMain">
+	<div class="bet-topbar">
+	   <div class="titlebar"><i></i><span id="issue">距<b id="issue_name">0</b>期还有</b><b id="h">00</b>:<b id="i">00</b>:<b id="s">00</b>开奖</span></div>
+       <div class="bet-menu">
+	        <span id="bet-play" data-id="">暂无</span>
+	    	<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+	          <div class="mui-scroll clearfix" id="playMenu">
+                <a types="gxk3" style="display: none;">快三投注</a>
+                <a types="gxkl10f" style="display: none;">快十投注</a>
+                <a types="gxkl10f" style="display: none;">幸运</a>
+                <a types="gxkl10f" style="display: none;">连码</a>
+                <a types="gxkl10f" style="display: none;">不中</a>
+                <!--<li types="gxkl10f" style="display: none;">连赢</li>-->
+                <a types="gxkl10f" style="display: none;">复式</a>
+                <a types="xyc" class="active">双面盘</a>
+                <a types="xyc">数字盘</a>
+                <a types="xyc">牛牛</a>
+	          </div>
+	        </div>
+        </div>
+	</div>
+	<div id="wrapper" class="bet-wrapper">
+		<div class="betbar">
+		</div>
+        <div class="bet-details">
+          <div class="bet-mode">
+        	 <div class="mui-numbox" data-numbox-min="1" >
+				<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+				<input id="test" class="mui-input-numbox" type="number" value="1">
+				<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+			 </div>
+          </div>
+          <div class="bet-select" id="bet-select">
+          	 <span class="active" data-val="1">元</span>
+          	 <span data-val="0.1">角</span>
+          	 <span data-val="0.01">分</span>
+          	 <span data-val="0.001">厘</span>
+          </div>
+          <select class="bet-rebate">
+          </select>
+        </div>
+	</div>
+</div>
+<input type="hidden" id="hidden" />
+<nav class="mui-bar mui-bar-tab" id="betBar">
+	<div class="betBar">
+		<div class="item clearAll">
+			<i class="iconfont icon-clear" id="clearAll"></i>
+		</div>
+		<div class="bet-info">
+			<span>共<strong id="zs">0</strong>注</span>
+			<span>共<strong id="je">0.000</strong>元</span>
+		</div>
+		<div class="item auto" id="auto">一键投注</div>
+		<div class="item gobuy" id="gobuy">确定购买</div>
+	</div>
+</nav>
+<script src="../../js/Controller/calculate.js"></script>
+<script src="../../js/Controller/xybet.js"></script>
+</body>
+</html>

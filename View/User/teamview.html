@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title></title>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/jquery.js"></script>
+<script src="../../js/para.js"></script>
+<script src="../../js/function.js"></script>
+<link href="../../css/mui.min.css" rel="stylesheet" />
+<link href="../../css/iconfont.css" rel="stylesheet" />
+<link href="../../css/style.css" rel="stylesheet" />
+<style>
+.mui-scroll-wrapper{
+	overflow: inherit;
+}
+#record-list .mui-pull-top-pocket{
+	top: 110px;
+}
+.mui-scroll{
+	padding-top: 50px;
+}
+#recent-list li{
+	background: transparent;
+}
+#recent-list li .item{
+	padding: 0 5px;
+}
+
+#recent-list li .label{
+	padding: 5px;
+	border-radius: 10px;
+	text-align: center;
+	display: inline-block;
+	background: #f7f7f7;
+	border: 1px solid #ddd;
+}
+
+#recent-list li .label p{
+	margin-bottom: 0;
+	line-height: 12px;
+	margin-top: 5px;
+}
+
+#recent-list li .label img{
+	margin-right: 5px;
+}
+#date-menu{
+	background: #528eff;
+	padding-bottom: 0;
+}
+#date-menu a{
+	color: white !important;
+}
+#date-menu.mui-segmented-control .mui-control-item.mui-active{
+	background:#528eff ;
+	border-bottom: 2px solid white;
+	border-radius: 0;
+	
+}
+.rex{
+	
+	flex-wrap: wrap;
+	padding:0 10px;
+	
+		
+}
+.rex li{
+	
+	width:47%;
+	margin: 0 !important;
+	padding: 0 !important;
+	line-height: 40px;
+	background: white !important;
+	padding-top:10px !important;
+	padding-bottom: 12px !important;
+	border-radius: 10px;
+	margin-bottom: 20px !important;
+	padding-right: 2 !important;
+	margin-left: 3.5% !important;
+	border-bottom: 0 !important;
+}
+.rex li:nth-child(2n+1){
+	float: left;
+	margin-left: 0 !important;
+}
+.rex li:nth-child(2n){
+	float: right;
+}
+.rex li p:nth-child(1){
+	width: 30%;
+}
+.rex li p:nth-child(2){
+	width: 70%;
+}
+.rex li img{
+	width: 70%;
+	margin-left: 5px;
+}
+
+.rex li p{
+	float: left;
+	width: 50%;
+	text-align: center;
+	padding: 0;
+}
+.rex li p span{
+	display: block !important;
+	text-align: center !important;
+	width: 100%;
+	padding-right: 0 !important;
+	line-height: 24px !important;
+}
+
+</style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav" id="topBar">
+    <h1 class="mui-title" id="title">团队总览</h1>
+    <a class="mui-icon mui-icon-left-nav mui-pull-left iconfont icon-leftarrow" id="back"></a>
+</header>
+<div id="date-menu" class="mui-segmented-control fixed" style="top: 40px;">
+	<a class="mui-control-item mui-active" id="t">本日</a>
+	<a class="mui-control-item" id="w">本周</a>
+	<a class="mui-control-item" id="m">本月</a>
+</div>
+<div id="selectDate" class="mui-segmented-control fixed" style="top: 80px;">
+	<div>请输入一个时间点</div>
+</div>
+<!--下拉刷新容器-->
+<div id="record-list">
+  <div id="refreshContainer" class="mui-content mui-scroll-wrapper" style="margin-top: 20px;">
+	  <div class="mui-scroll">
+		<!--数据列表-->
+		<ul class="mui-table-view mui-table-view-chevron record-details rex clearfix" id="recent-list">
+			<li><p ><img src="../../images/team/rs.png"/></p><p><span>团队总人数</span><span>1</span></p></li>
+			<li><p ><img src="../../images/team/rs.png"/></p><p><span>团队总人数</span><span>1</span></p></li>
+			<li><p ><img src="../../images/team/rs.png"/></p><p><span>团队总人数玩家</span><span>1</span></p></li>
+		</ul>
+	  </div>
+  </div>
+</div>
+<div class="dateBar">
+  <h3>根据条件查询</h3>
+  <div class="label">
+     <i>开始时间</i>
+     <input placeholder="请输入日期" class="laydate-icon date" type="date" id="s_date">
+  </div>
+  <div class="label">
+     <i>结束时间</i>
+     <input placeholder="请输入日期" class="laydate-icon date" type="date" id="e_date">
+  </div>
+  <div class="label">
+     <span id="customSearch">查询</span>
+     <span class="close">关闭</span>
+  </div>
+</div>
+<div class="date-mask"></div>
+<script src="../../js/Controller/teamview.js" type="text/javascript"></script>
+<script type="text/javascript">
+mui('body').on('tap','#selectDate',function(e){
+    $('.dateBar,.date-mask').show()
+})
+
+mui('body').on('tap','.close',function(e){
+	$('.dateBar,.date-mask').hide()
+})
+</script>
+</body>
+</html>

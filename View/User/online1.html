@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/jquery.js"></script>
+		<script src="../../js/para.js"></script>
+		<script src="../../js/function.js"></script>
+		<script src="../../js/clipboard.min.js" type="text/javascript"></script>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../css/iconfont.css" rel="stylesheet" />
+		<link href="../../css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" id="topBar">
+			<h1 class="mui-title" id="title">在线充值</h1>
+			<a class="mui-icon mui-icon-left-nav mui-pull-left iconfont icon-leftarrow" id="back"></a>
+		</header>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			if(window.plus) {
+				plusReady();
+			} else {
+				document.addEventListener("plusready", plusReady, false);
+			}
+
+			function plusReady() {
+				var wv = plus.webview.currentWebview()
+				var data1 = wv.value
+				console.log(data1)
+					mui.init({
+				subpages: [{
+					url: data1,
+				     id:111,
+					styles: {
+
+					}
+				}]
+			});
+			}
+		
+			mui('#topBar').on('tap', '#back', function(e) {
+				plus.webview.currentWebview().close()
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title></title>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/jquery.js"></script>
+<script src="../../js/para.js"></script>
+<script src="../../js/function.js"></script>
+<script src="../../js/clipboard.min.js" type="text/javascript"></script>
+<link href="../../css/mui.min.css" rel="stylesheet" />
+<link href="../../css/iconfont.css" rel="stylesheet" />
+<link href="../../css/style.css" rel="stylesheet" />
+<style>
+.mui-content{
+	background: none;
+}
+#form{
+	background: #fff
+}
+.input_item{
+	position: relative;
+}
+.copy{
+	position: absolute;
+	right: 5px;
+	top: 9px;
+	display: inline-block;
+	font-style: normal;
+	background: #528eff;
+	padding:2px 6px;
+	color: white;
+	border: 0;
+}
+</style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav" id="topBar">
+    <h1 class="mui-title" id="title">账户充值</h1>
+    <a class="mui-icon mui-icon-left-nav mui-pull-left iconfont icon-leftarrow" id="back"></a>
+</header>
+<div class="fixed" style="top: 44px;">
+ 	<div id="record-menu" class="mui-segmented-control mui-segmented-controls">
+       <a class="mui-control-item mui-active" href="#item1" data-id="0">网银转账</a>
+       <a class="mui-control-item" href="#item2"  data-id="1">在线充值</a>
+       <a class="mui-control-item" href="#item3"  data-id="2">扫码充值</a>
+   </div>
+</div>
+
+<div id="wrapper">
+	<div id="air" style="padding-top: 50px;">
+		<!--网银转账-->
+		 <div class="input_label" style="padding-bottom: 0px" id="item1">
+			 	<div class="input_item mui-clearfix" >
+		 	        <span class="fl">收款银行</span>
+		 	        <div style="height:8px">
+		 	        <select id="sk"></select>
+		 	        </div>
+		 	        <input class="fl" type="text" id="pid" readonly="readonly"/>
+		 	        <button type="button" class="copy" id="copy1">复制</button>
+		         </div>
+		         <div class="input_item mui-clearfix" >
+		 	        <span class="fl">收款人姓名</span>
+		 	        <input class="fl" type="text" id="recename" readonly="readonly"/>
+		 	        <button  type="button"  id="copy2" class="copy">复制</button>
+		         </div>
+		         <div class="input_item mui-clearfix" >
+		 	        <span class="fl">收款人卡号</span>
+		 	        <input class="fl" type="text" id="rececode" readonly="readonly"/>
+		 	        <button type="button" class="copy" id="copy3">复制</button>
+		         </div>
+		         <div class="input_item mui-clearfix" >
+		 	        <span class="fl">开户银行</span>
+		 	        <input class="fl" type="text" id="bid" readonly="readonly"/>
+		 	        <button type="button" class="copy" id="copy4">复制</button>
+		         </div>
+			 	<div class="input_item mui-clearfix">
+			        <span class="fl">充值金额</span>
+			 	    <input class="fl" type="text" id="money" placeholder="" />
+			    </div>
+			    <div class="input_item mui-clearfix" id="psinput" style="border: 1px solid #E2E2E2; ">
+			 	    <span class="fl">附言</span>
+			 	    <input class="fl" type="text" id="ps" readonly="readonly"/>
+			 	    <button  type="button" class="copy" id="copy5">复制</button>
+			   </div>
+			   <p>重要提醒：</p><p style="margin-top:-20px">平台银行卡不定期更换，请您核对最新银行卡号进行充值，</p><p style="margin-top:-20px">如因客户充值错误出现问题，平台概不负责！</p>
+			   <div class="input_item input_item1">
+			   	<input type="hidden" class="wy_min" value="">
+			    <input type="hidden" class="wy_max" value="">
+			   	  <input type="hidden" class="wy_s" value="">
+			   	  <input type="hidden" class="wy_id" value="">
+			 	  <a href="javascript:;" id="submit_wy">提交</a>
+			   </div>
+	    </div>
+	    <!--在线-->
+	    <div class="input_label" style="padding-bottom: 0px; display: none;" id="item2">
+			 	<div class="input_item mui-clearfix" >
+		 	        <span class="fl">开户银行</span>
+			 	  <select class="fl" id="blist">
+			 	  <option value="">请选择</option>
+			 	  </select>
+		        </div>
+		        <div class="input_item mui-clearfix" style="border: 1px solid #E2E2E2; ">
+			        <span class="fl">充值金额</span>
+			 	    <input class="fl" type="text" id="money_wx" placeholder="" />
+			    </div>
+			   <div class="input_item input_item1">
+			   	<input type="hidden" class="zx_min" value="">
+			    <input type="hidden" class="zx_max" value="">
+			   	  <input type="hidden" class="zx_s" value="">
+			   	  <input type="hidden" class="zx_id" value="">
+			 	  <a href="javascript:;" id="submit_wx">提交</a>
+			   </div>
+	    </div>
+	    <!--扫码-->
+	    <div class="input_label" style="padding-bottom: 0px;  display: none;" id="item3">
+			 	<div class="input_item mui-clearfix" >
+		 	        <span class="fl">充值渠道</span>
+		 	        <select class="fl" id="sm_list">
+		 	        </select>
+		        </div>
+		        <div class="input_item mui-clearfix" >
+			        <span class="fl">充值金额</span>
+			 	    <input class="fl" type="text" id="money_sm" placeholder="" />
+			    </div>
+			    <div class="input_item mui-clearfix" >
+			        <span class="fl" style="line-height: 55px;" >快捷额度</span>
+			 	    <ul class="fl ul mui-clearfix" >
+			 	    	<li class="money1">51</li>
+			 	    	<li class="money2">99</li>
+			 	    	<li class="money3">199</li>
+			 	    	<li class="money4">299</li>
+			 	    	<li class="money5">499</li>
+			 	    </ul>
+			    </div>
+			     <div class="input_item mui-clearfix" style="border: 1px solid #E2E2E2; " >
+			        <span class="fl">存款时间</span>
+			 	    <input class="fl" type="text" id="nowTime" placeholder="" disabled="disabled"/>
+			    </div>
+			    
+			   <div class="input_item input_item1">
+			   	<input type="hidden" class="sm_min" value="">
+			    <input type="hidden" class="sm_max" value="">
+			   	  <input type="hidden" class="sm_s" value="">
+			   	  <input type="hidden" class="sm_id" value="">
+			 	  <a href="javascript:;" id="submit_sm">提交</a>
+			   </div>
+	    </div>
+	</div>
+</div>
+<script src="../../js/Controller/topup.js" type="text/javascript"></script>
+<script>
+$(function(){
+	MathRand()   
+})
+function MathRand() { 
+   var Num=""; 
+   for(var i=0;i<6;i++){ 
+      Num+=Math.floor(Math.random()*10); 
+   } 
+   document.getElementById("ps").value=Num; 
+   document.getElementById("copy5").setAttribute('data-clipboard-text',Num)
+} 
+</script>
+</body>
+</html>

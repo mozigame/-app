@@ -1,0 +1,727 @@
+{
+	"View/List/list.html": {
+		"resources": [
+			"js/Controller/list.js"
+		],
+		"refer": []
+	},
+	"View/Index/index.html": {
+		"resources": [
+			"View/Home/home.html",
+			"js/para.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"images/public/service.png",
+			"js/Controller/index.js",
+			"js/function.js",
+			"fonts/iconfont.ttf",
+			"View/Game/gameList.html",
+			"images/banner/4.png",
+			"images/banner/banner2.png",
+			"images/banner/2.png",
+			"images/banner/banner1.jpg",
+			"images/banner/3.png",
+			"images/banner/banner3.png",
+			"css/swiper.min.css",
+			"js/swiper.min.js",
+			"images/banner/1.png",
+			"images/public/bg.png",
+			"js/jquery.js"
+		],
+		"refer": [
+			"View/List/list.html",
+			"View/Home/home.html",
+			"View/User/user.html",
+			"View/Record/record.html",
+			"View/Game/gameList.html",
+			"View/Service/service.html"
+		]
+	},
+	"View/Home/home.html": {
+		"resources": [
+			"images/type/mskssc.png",
+			"js/para.js",
+			"js/swiper.min.js",
+			"js/jquery.marquee.min.js",
+			"images/type/gd11x5.png",
+			"images/banner/banner1.jpg",
+			"js/mui.min.js",
+			"images/type/jlpssc.png",
+			"images/type/tw5fc.png",
+			"images/type/mlxy3fc.png",
+			"css/iconfont.css",
+			"images/type/sh11x5.png",
+			"images/banner/3.jpg",
+			"js/Controller/home.js",
+			"js/jquery.js",
+			"images/type/tjssc.png",
+			"images/banner/4.jpg",
+			"images/type/dbssc.png",
+			"css/style.css",
+			"images/type/hgssc.png",
+			"images/banner/1.jpg",
+			"images/type/sd11x5.png",
+			"images/type/bjssc.png",
+			"images/type/jlpsm.png",
+			"images/banner/2.jpg",
+			"images/type/bjpk10.png",
+			"css/swiper.min.css",
+			"css/mui.min.css",
+			"images/type/cqssc.png",
+			"images/type/jx11x5.png",
+			"js/function.js",
+			"images/type/fc3d.png",
+			"images/public/bg.png",
+			"images/type/jlpffc.png",
+			"images/banner/banner3.png",
+			"images/banner/index_banner_1.jpg",
+			"images/banner/4.png",
+			"images/banner/banner2.png",
+			"images/banner/2.png",
+			"images/banner/3.png",
+			"images/banner/1.png",
+			"fonts/iconfont.ttf",
+			"images/type/pl3.png",
+			"images/type/djssc.png",
+			"images/type/xjpssc.png",
+			"images/type/xjssc.png",
+			"images/type/hljssc.png",
+			"images/type/wh1fc.png",
+			"images/type/wh2fc.png",
+			"images/type/xyjlpssc.png",
+			"images/type/xyxjpssc.png",
+			"images/type/xywh2fc.png",
+			"images/type/wh5fc.png",
+			"images/type/xycqssc.png",
+			"images/type/txffc.png",
+			"images/type/xyhgssc.png",
+			"images/type/xymskssc.png"
+		],
+		"refer": [
+			"View/Bet/bet.html",
+			"View/Home/add-lot.html",
+			"View/Home/contne.html"
+		]
+	},
+	"View/Login/login.html": {
+		"resources": [
+			"js/Controller/login.js",
+			"images/public/logo1.gif",
+			"js/para.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"images/public/bg.png",
+			"js/jquery.js",
+			"images/public/logo.png",
+			"js/mui.min.js",
+			"js/function.js"
+		],
+		"refer": [
+			"View/Index/index.html"
+		]
+	},
+	"View/User/user.html": {
+		"resources": [
+			"css/iconfont1.css",
+			"fonts/iconfont1.ttf",
+			"images/public/userBg.png",
+			"js/Controller/user.js",
+			"fonts/mui.ttf",
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"images/public/bg.png",
+			"js/function.js"
+		],
+		"refer": [
+			"View/User/teambet.html",
+			"View/User/teamview.html",
+			"View/User/topup.html",
+			"View/User/drawith.html",
+			"View/User/myCount.html",
+			"View/User/trans.html",
+			"View/User/setMpwd.html",
+			"View/User/bankcards.html",
+			"View/User/loginpwd.html",
+			"View/User/moneypwd.html",
+			"View/User/agent.html",
+			"View/User/member.html",
+			"View/Login/login.html",
+			"View/User/teamReport.html",
+			"View/User/perReport.html",
+			"View/User/report.html"
+		]
+	},
+	"View/Record/record.html": {
+		"resources": [
+			"js/Controller/reocrod.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/jquery.js",
+			"fonts/iconfont.ttf",
+			"js/para.js",
+			"js/mui.min.js",
+			"js/function.js"
+		],
+		"refer": [
+			"View/Record/details.html"
+		]
+	},
+	"app.html": {
+		"resources": [
+			"js/Controller/app.js",
+			"js/mui.min.js",
+			"js/function.js"
+		],
+		"refer": [
+			"View/Login/login.html"
+		]
+	},
+	"View/User/teambet.html": {
+		"resources": [
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/Controller/teambet.js",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": [
+			"View/User/teambetDetail.html"
+		]
+	},
+	"View/User/teamview.html": {
+		"resources": [
+			"images/team/qp.png",
+			"js/para.js",
+			"images/team/td.png",
+			"css/style.css",
+			"images/team/yx.png",
+			"images/team/jq.png",
+			"images/team/zc.png",
+			"js/Controller/teamview.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"images/team/fx.png",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf",
+			"images/team/rs.png",
+			"js/jquery.js",
+			"js/function.js",
+			"images/team/t10.png",
+			"images/team/t6.png",
+			"images/team/t8.png",
+			"images/team/t11.png",
+			"images/team/t9.png",
+			"images/team/t1.png",
+			"images/team/t7.png",
+			"images/team/t3.png",
+			"images/team/t5.png",
+			"images/team/t4.png",
+			"images/team/t2.png"
+		],
+		"refer": []
+	},
+	"View/User/topup.html": {
+		"resources": [
+			"js/clipboard.min.js",
+			"js/Controller/topup.js",
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": [
+			"View/User/online1.html"
+		]
+	},
+	"View/User/drawith.html": {
+		"resources": [
+			"js/Controller/drawith.js",
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": []
+	},
+	"View/User/myCount.html": {
+		"resources": [
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/jquery.js",
+			"js/Controller/myAccount.js",
+			"js/function.js"
+		],
+		"refer": []
+	},
+	"View/User/trans.html": {
+		"resources": [
+			"js/Controller/trans.js",
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"images/table/jt.png",
+			"js/jquery.js",
+			"js/function.js",
+			"fonts/mui.ttf"
+		],
+		"refer": []
+	},
+	"View/User/setMpwd.html": {
+		"resources": [
+			"js/Controller/setMpwd.js",
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/function.js"
+		],
+		"refer": []
+	},
+	"View/User/bankcards.html": {
+		"resources": [
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/jquery.js",
+			"js/Controller/banks.js",
+			"js/function.js"
+		],
+		"refer": [
+			"View/User/setCards.html"
+		]
+	},
+	"View/User/loginpwd.html": {
+		"resources": [
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/Controller/loginPwd.js",
+			"js/function.js"
+		],
+		"refer": []
+	},
+	"View/User/setCards.html": {
+		"resources": [
+			"js/Controller/cards.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css"
+		],
+		"refer": []
+	},
+	"View/User/moneypwd.html": {
+		"resources": [
+			"js/Controller/moneyPwd.js",
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/function.js"
+		],
+		"refer": []
+	},
+	"View/User/agent.html": {
+		"resources": [
+			"js/Controller/agent.js",
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/jquery.js",
+			"js/function.js",
+			"js/clipboard.min.js"
+		],
+		"refer": []
+	},
+	"View/User/member.html": {
+		"resources": [
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/Controller/member.js",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": [
+			"View/User/memberzhuan.html",
+			"View/User/memberfd.html",
+			"View/User/memberdetails.html"
+		]
+	},
+	"View/User/teambetDetail.html": {
+		"resources": [
+			"js/Controller/teambetDetail.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/para.js",
+			"js/mui.min.js",
+			"fonts/iconfont.ttf",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": []
+	},
+	"View/Game/gameList.html": {
+		"resources": [
+			"js/Controller/gameList.js",
+			"js/para.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/jquery.js",
+			"js/function.js",
+			"images/public/bgn.jpg",
+			"images/public/service.png"
+		],
+		"refer": [
+			"View/Game/game.html",
+			"View/Game/Baccarat.html",
+			"View/Game/xybet.html"
+		]
+	},
+	"View/Bet/bet.html": {
+		"resources": [
+			"js/para.js",
+			"js/mui.min.js",
+			"js/calc.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"js/jsonData.js",
+			"js/Controller/bet.js",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": [
+			"View/Bet/history.html",
+			"View/Bet/order.html",
+			"View/Bet/play.html"
+		]
+	},
+	"View/Home/add-lot.html": {
+		"resources": [
+			"images/type/mskssc.png",
+			"images/type/fc3d.png",
+			"images/type/hljssc.png",
+			"js/para.js",
+			"js/swiper.min.js",
+			"images/type/wh1fc.png",
+			"images/type/gd11x5.png",
+			"images/type/wh5fc.png",
+			"images/type/djssc.png",
+			"js/mui.min.js",
+			"images/type/wh2fc.png",
+			"images/type/jlpssc.png",
+			"css/iconfont.css",
+			"images/type/mlxy3fc.png",
+			"images/type/tw5fc.png",
+			"images/type/sh11x5.png",
+			"images/type/jlpffc.png",
+			"fonts/iconfont.ttf",
+			"images/type/txffc.png",
+			"js/jquery.js",
+			"images/type/tjssc.png",
+			"images/type/dbssc.png",
+			"js/jsonData.js",
+			"css/style.css",
+			"images/type/hgssc.png",
+			"images/type/sd11x5.png",
+			"images/type/bjssc.png",
+			"images/type/jlpsm.png",
+			"images/type/xjpssc.png",
+			"images/type/xjssc.png",
+			"images/type/bjpk10.png",
+			"js/Controller/addLot.js",
+			"css/swiper.min.css",
+			"css/mui.min.css",
+			"images/type/cqssc.png",
+			"images/type/jx11x5.png",
+			"images/type/pl3.png",
+			"js/function.js"
+		],
+		"refer": []
+	},
+	"View/Record/details.html": {
+		"resources": [
+			"js/Controller/reocrodDetails.js",
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": []
+	},
+	"View/Bet/history.html": {
+		"resources": [
+			"js/Controller/histroy.js",
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": []
+	},
+	"View/Bet/order.html": {
+		"resources": [
+			"js/Controller/order.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/para.js",
+			"js/mui.min.js",
+			"fonts/iconfont.ttf",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": []
+	},
+	"View/User/memberzhuan.html": {
+		"resources": [
+			"js/Controller/memberzhuan.js",
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/jquery.js",
+			"js/function.js",
+			"fonts/mui.ttf",
+			"css/iconfont1.css",
+			"fonts/iconfont1.ttf"
+		],
+		"refer": []
+	},
+	"View/User/memberfd.html": {
+		"resources": [
+			"js/Controller/memberfd.js",
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": []
+	},
+	"View/Bet/play.html": {
+		"resources": [
+			"js/Controller/play.js"
+		],
+		"refer": []
+	},
+	"View/Home/contne.html": {
+		"resources": [
+			"js/Controller/content.js",
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/swiper.min.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/swiper.min.js",
+			"fonts/iconfont.ttf",
+			"images/public/bg.png",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": []
+	},
+	"View/User/teamReport.html": {
+		"resources": [
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/Controller/teamReport.js",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": [
+			"View/User/transfer.html",
+			"View/User/teamDetail.html"
+		]
+	},
+	"View/User/memberdetails.html": {
+		"resources": [
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/Controller/memberdetails.js",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": [
+			"View/User/memberfd.html",
+			"View/User/memberzhuan.html"
+		]
+	},
+	"View/User/online1.html": {
+		"resources": [
+			"css/mui.min.css",
+			"js/clipboard.min.js",
+			"js/para.js",
+			"js/mui.min.js",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": []
+	},
+	"View/User/perReport.html": {
+		"resources": [
+			"js/Controller/perReport.js",
+			"js/jquery.js",
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/function.js"
+		],
+		"refer": []
+	},
+	"View/User/report.html": {
+		"resources": [
+			"js/Controller/report.js",
+			"js/mui.min.js",
+			"js/para.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": []
+	},
+	"View/User/transfer.html": {
+		"resources": [
+			"js/Controller/transfer.js"
+		],
+		"refer": []
+	},
+	"View/User/teamDetail.html": {
+		"resources": [
+			"js/Controller/teamDetail.js",
+			"js/para.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"fonts/iconfont.ttf",
+			"js/jquery.js",
+			"js/function.js"
+		],
+		"refer": [
+			"View/User/teamDetail1.html"
+		]
+	},
+	"View/Game/game.html": {
+		"resources": [
+			"img/banker/cm_10k.png",
+			"img/newimges/zlu.png",
+			"img/banker/cm_1k.png",
+			"img/banker/huan.png",
+			"img/banker/check_bet_btn.png",
+			"img/banker/banker_lhh.png",
+			"img/banker/cm_10.png",
+			"js/Controller/shangGame.js",
+			"img/banker/cm_50.png",
+			"img/newimges/zlan.png",
+			"img/newimges/zhu.png",
+			"img/banker/look_bet_btn.png",
+			"img/banker/submit_banker.png",
+			"img/banker/confirm_btn.png",
+			"img/banker/table2.jpg",
+			"img/banker/x.png",
+			"css/app.css",
+			"img/newimges/zhong.png",
+			"img/newimges/zhe.png",
+			"img/banker/cancel_btn.png",
+			"img/banker/cm_100.png",
+			"img/newimges/zlong.png",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"View/Game/gameList.html"
+		]
+	},
+	"View/User/teamDetail1.html": {
+		"resources": [
+			"js/para.js",
+			"js/mui.min.js",
+			"js/Controller/teamDetail.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/jquery.js",
+			"js/function.js",
+			"fonts/iconfont.ttf"
+		]
+	}
+}

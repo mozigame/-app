@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title></title>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/jquery.js"></script>
+<script src="../../js/para.js"></script>
+<script src="../../js/function.js"></script>
+<link href="../../css/mui.min.css" rel="stylesheet" />
+<link href="../../css/iconfont.css" rel="stylesheet" />
+<link href="../../css/style.css" rel="stylesheet" />
+<style>
+.mui-scroll-wrapper{
+	overflow: inherit;
+}
+#record-list .mui-pull-top-pocket{
+	top: 110px;
+}
+.mui-scroll{
+	padding-top: 7px;
+}
+#recent-list li{
+	background: #fff;
+	padding-top: 10px;
+}
+#recent-list li .item{
+	padding: 0 5px;
+}
+
+#recent-list li .label{
+	background: #fff;
+	padding: 5px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,.1);
+	text-align: center;
+	display: inline-block;
+}
+
+#recent-list li .label p{
+	margin-bottom: 0;
+	line-height: 12px;
+	margin-top: 5px;
+}
+
+#recent-list li .label img{
+	margin-right: 5px;
+}
+.re span{
+	margin-left: 5px;
+}
+</style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav" id="topBar">
+    <h1 class="mui-title" id="title">团队投注</h1>
+    <a class="mui-icon mui-icon-left-nav mui-pull-left iconfont icon-leftarrow" id="back"></a>
+</header>
+<div id="date-menu" class="mui-segmented-control fixed" style="top: 40px;">
+	<a class="mui-control-item mui-active" id="t">本日</a>
+	<a class="mui-control-item" id="w">本周</a>
+	<a class="mui-control-item" id="m">本月</a>
+</div>
+<div id="selectDate" class="mui-segmented-control fixed" style="top: 81px;">
+	<div>请输入一个时间点</div>
+</div>
+<!--下拉刷新容器-->
+<div id="record-list">
+  <div id="refreshContainer" class="mui-content mui-scroll-wrapper" style="margin-top: 60px;">
+	  <div class="mui-scroll">
+		<!--数据列表-->
+		<ul class="mui-table-view mui-table-view-chevron record-details re" id="recent-list">
+		</ul>
+	  </div>
+  </div>
+</div>
+<div class="dateBar">
+  <h3>根据条件查询</h3>
+  <div class="label">
+     <i>开始时间</i>
+     <input placeholder="请输入日期" class="laydate-icon date" type="date" id="s_date">
+  </div>
+  <div class="label">
+     <i>结束时间</i>
+     <input placeholder="请输入日期" class="laydate-icon date" type="date" id="e_date">
+  </div>
+  <div class="label">
+     <span id="customSearch">查询</span>
+     <span class="close">关闭</span>
+  </div>
+</div>
+<div class="date-mask"></div>
+<script src="../../js/Controller/teambet.js" type="text/javascript"></script>
+<script type="text/javascript">
+mui('body').on('tap','#selectDate',function(e){
+    $('.dateBar,.date-mask').show()
+})
+
+mui('body').on('tap','.close',function(e){
+	$('.dateBar,.date-mask').hide()
+})
+</script>
+</body>
+</html>
